@@ -48,6 +48,9 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use('theprimeagen/vim-be-good')
+  use('mfussenegger/nvim-jdtls')
 
 end)
+
 
