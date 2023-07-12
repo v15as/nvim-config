@@ -51,3 +51,6 @@ end)
 
 vim.keymap.set("n", "<Up>", "10k")
 vim.keymap.set("n", "<Down>", "10j")
+
+-- Copying the vscode behaviour of making tab splits
+vim.keymap.set('n', '<C-\\>', '<CMD>vsplit<CR>')

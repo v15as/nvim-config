@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
 	  requires = {
 		  -- LSP Support
 		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
+          {'williamboman/mason.nvim'},
 		  {'williamboman/mason-lspconfig.nvim'},
 
 		  -- Autocompletion
@@ -41,8 +41,17 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
-  use('theprimeagen/vim-be-good')
-  use('mfussenegger/nvim-jdtls')
+
+    use('norcalli/nvim-colorizer.lua')
+    use({
+        'lukas-reineke/indent-blankline.nvim',
+        event = 'BufRead',
+        show_first_indent_level = false,
+        filetype_exclude = { 'help', 'packer', 'FTerm' },
+        buftype_exclude = { 'terminal', 'nofile' },
+    })
+ -- use('theprimeagen/vim-be-good')
+ -- use('mfussenegger/nvim-jdtls')
 
 end)
 
