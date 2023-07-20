@@ -1,3 +1,4 @@
+
 -- https://github.com/wbthomason/packer.nvim
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
@@ -42,7 +43,13 @@ return require('packer').startup(function(use)
 	  }
   }
 
-    use('norcalli/nvim-colorizer.lua')
+    use({
+        'norcalli/nvim-colorizer.lua',
+        event = 'CursorHold',
+        config = function()
+            require('colorizer').setup()
+        end,
+    })
     use({
         'lukas-reineke/indent-blankline.nvim',
         event = 'BufRead',
@@ -54,5 +61,4 @@ return require('packer').startup(function(use)
  -- use('mfussenegger/nvim-jdtls')
 
 end)
-
 
