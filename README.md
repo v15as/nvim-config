@@ -1,3 +1,3 @@
 # NVIM Config
-  credits: https://github.com/ThePrimeagen/init.lua
+  credits: https://github.com/numToStr/dotfiles
   
