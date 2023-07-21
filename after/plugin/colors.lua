@@ -1,4 +1,4 @@
-function ColorMyPencils(color) 
+--[[ function ColorMyPencils(color) 
 	color = color or "nightfly"
 	vim.cmd.colorscheme(color)
 
@@ -8,3 +8,4 @@ function ColorMyPencils(color)
 end
 
 ColorMyPencils()
+]] --
