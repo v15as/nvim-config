@@ -35,6 +35,7 @@ map('n', '<leader>]', '<CMD>bn<CR>')
 map('n', "''", '<CMD>b#<CR>')
 
 -- Copying the vscode behaviour of making tab splits
+-- To change between windows is <C-WW>
 map('n', '<C-\\>', '<CMD>vsplit<CR>')
 map('n', '<A-\\>', '<CMD>split<CR>')
 
