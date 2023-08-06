@@ -55,3 +55,6 @@ map('n', '<leader>ex', '<CMD>Ex<Cr>')
 
 map('n', '<Up>', '10k')
 map('n', '<Down>', '10j')
+
+map('v', '<Up>', '10k')
+map('v', '<Down>', '10j')
