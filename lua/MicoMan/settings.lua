@@ -86,3 +86,4 @@ g.mapleader = ' '
 g.maplocalleader = ' '
 
 vim.opt.colorcolumn= "80"
+
