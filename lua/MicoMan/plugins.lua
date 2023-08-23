@@ -69,6 +69,8 @@ return require('packer').startup({
           end,
         })
 
+        use({'tpope/vim-surround'})
+
         ---------------------------------
         -- Navigation and Fuzzy Search --
         ---------------------------------
