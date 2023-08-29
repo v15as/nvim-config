@@ -61,3 +61,4 @@ map('v', '<Down>', '10j')
 
 map('n','<Left>','<C-W><')
 map('n','<Right>','<C-W>>')
+

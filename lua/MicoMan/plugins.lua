@@ -53,6 +53,8 @@ return require('packer').startup({
         -- Editor UI Niceties --
         --------------------------
 
+
+        
         use({
             'lukas-reineke/indent-blankline.nvim',
             event = 'BufRead',
@@ -61,13 +63,18 @@ return require('packer').startup({
             end,
         })
 
-       use({
-          'norcalli/nvim-colorizer.lua',
-          event = 'CursorHold',
-          config = function()
-              require('colorizer').setup()
-          end,
-        })
+        use {
+            "windwp/nvim-autopairs",
+            config = function() require("nvim-autopairs").setup {} end
+        }
+
+        use({
+           'norcalli/nvim-colorizer.lua',
+           event = 'CursorHold',
+           config = function()
+               require('MicoMan.plugins.colorizer')
+           end,
+         })
 
         use({'tpope/vim-surround'})
 
