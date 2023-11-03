@@ -58,9 +58,10 @@ return require('packer').startup({
         use({
             'lukas-reineke/indent-blankline.nvim',
             event = 'BufRead',
-            config = function()
-                require('MicoMan.plugins.indentline')
-            end,
+            main = "ibl"
+            -- config = function()
+            --     require('MicoMan.plugins.indentline')
+            -- end,
         })
 
         use {
