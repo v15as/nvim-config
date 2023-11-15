@@ -56,4 +56,4 @@ A.nvim_create_autocmd('BufReadPost', {
     end,
 })
 
-vim.cmd.colorscheme("nightfly")
+vim.cmd.colorscheme("kanagawa")

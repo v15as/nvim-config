@@ -20,7 +20,7 @@ return require('packer').startup({
         })
 
         use { "bluz71/vim-nightfly-colors", as = "nightfly" }
-
+        use { "rebelot/kanagawa.nvim", as = "kanagawa" }
 
         use {
             'nvim-lualine/lualine.nvim',
