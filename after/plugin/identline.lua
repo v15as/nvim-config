@@ -1,1 +1,1 @@
-require("ibl").setup { scope = {show_start = false }}
+-- require("ibl").setup { scope = {show_start = false }}
