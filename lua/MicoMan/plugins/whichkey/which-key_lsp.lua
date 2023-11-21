@@ -9,7 +9,7 @@ local mappings = {
     ["r"] = { "<cmd>lua vim.lsp.buf.references()<CR>", "Next buffer"},
     ["nn"] = { "<cmd>lua vim.lsp.buf.rename()<cr>", "Rename (nn = new name)"},
     ["c"] = {"<cmd>lua vim.lsp.buf.code_action()<CR>", "Code action"},
-
+    ["l"] = {"<cmd>lua vim.diagnostic.open_float()<CR>", "Show error message"},
 
 }
 
