@@ -1,6 +1,3 @@
 
-# NVIM Config
-  credits: https://github.com/numToStr/dotfiles
-
-## Notes
+## NVIM config
 My config for Neovim.
