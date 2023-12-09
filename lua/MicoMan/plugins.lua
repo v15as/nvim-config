@@ -52,9 +52,14 @@ return require('packer').startup({
         -------------------------
         -- Editor UI Niceties --
         --------------------------
+        -- Lua
+        use {
+            "folke/which-key.nvim",
+            config = function()
+                require('MicoMan.plugins.whichkey.whichkey')
+            end
+        }
 
-
-        
         use({
             'lukas-reineke/indent-blankline.nvim',
             event = 'BufRead',
