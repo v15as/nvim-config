@@ -142,55 +142,6 @@ return require('packer').startup({
                 {'L3MON4D3/LuaSnip'},
             }
         }
---         use({
---             'neovim/nvim-lspconfig',
---             event = 'BufRead',
---             config = function()
---                 require('MicoMan.plugins.lsp.servers')
---             end,
---             requires = {
---                 {
---                     -- WARN: Unfortunately we won't be able to lazy load this
---                     'hrsh7th/cmp-nvim-lsp',
---                 },
---             },
---         })
--- 
---         use({
---             'jose-elias-alvarez/null-ls.nvim',
---             event = 'BufRead',
---             config = function()
---                 require('MicoMan.plugins.lsp.null-ls')
---             end,
---         })
--- 
---         use({
---             {
---                 'hrsh7th/nvim-cmp',
---                 event = 'InsertEnter',
---                 config = function()
---                     require('MicoMan.plugins.lsp.nvim-cmp')
---                 end,
---                 requires = {
---                     {
---                         'L3MON4D3/LuaSnip',
---                         event = 'InsertEnter',
---                         config = function()
---                             require('MicoMan.plugins.lsp.luasnip')
---                         end,
---                         requires = {
---                             {
---                                 'rafamadriz/friendly-snippets',
---                                 event = 'CursorHold',
---                             },
---                         },
---                     },
---                 },
---             },
---             { 'saadparwaiz1/cmp_luasnip', after = 'nvim-cmp' },
---             { 'hrsh7th/cmp-path', after = 'nvim-cmp' },
---             { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' },
---         })
 
     end,
     config = {

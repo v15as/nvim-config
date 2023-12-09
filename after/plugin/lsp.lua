@@ -1,20 +1,3 @@
--- Fix Undefined global 'vim'
--- lsp_zero.configure('lua-language-server', {
---     settings = {
---         Lua = {
---             diagnostics = {
---                 globals = { 'vim' }
---             }
---         }
---     }
--- })
----
--- Replace these language servers
--- with the ones you have installed in your system
----
--- require('lspconfig').lua_ls.setup({})
--- require('lspconfig').rust_analyzer.setup({})
-
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
