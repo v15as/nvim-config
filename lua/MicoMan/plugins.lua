@@ -49,6 +49,7 @@ return require('packer').startup({
             { 'JoosepAlviste/nvim-ts-context-commentstring', after = 'nvim-treesitter' },
         })
 
+        use 'mfussenegger/nvim-jdtls'
         -------------------------
         -- Editor UI Niceties --
         --------------------------
