@@ -15,6 +15,7 @@ require('mason-lspconfig').setup({
         'rust_analyzer',
         'clangd',
         'jdtls',
+        'html',
     },
     handlers = {
         lsp_zero.default_setup,

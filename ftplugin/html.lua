@@ -1,0 +1,5 @@
+-- local config = {
+--     cmd = {'/home/mico/.local/share/nvim/mason/bin/vscode-html-language-server'},
+--     root_dir = vim.fs.dirname(vim.fs.find({'.git'}, { upward = true })[1]),
+-- }
+-- require('jdtls').start_or_attach(config)

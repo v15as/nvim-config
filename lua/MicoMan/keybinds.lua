@@ -24,6 +24,7 @@ map('n', '<C-Q>', '<CMD>q<CR>')
 map('n', '<leader>o', 'o<ESC>')
 map('n', '<leader>O', 'O<ESC>')
 
+vim.keymap.set('i','<c-space>', "coc#refresh()", {silent = true, expr = true})
 -- Shortcut to yank register
 map({ 'n', 'x' }, '<leader>p', '"0p')
 

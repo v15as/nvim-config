@@ -29,6 +29,12 @@ return require('packer').startup({
                 require('MicoMan.plugins.lualine')
             end,
         }
+
+        -- Close html tags, because treesitter isn't doing the job for some reason
+        use {'alvan/vim-closetag'}
+
+        -- You can use Coc altough the Autocompletion window will probably be under the mason autocomplete window
+        -- use {'neoclide/coc.nvim', branch = 'release'}
         -----------------------------------
         -- Treesitter: Better Highlights --
         -----------------------------------
@@ -38,6 +44,7 @@ return require('packer').startup({
                 'nvim-treesitter/nvim-treesitter',
                 event = 'CursorHold',
                 run = ':TSUpdate',
+
                 config = function()
                     require('MicoMan.plugins.treesitter')
                 end,
