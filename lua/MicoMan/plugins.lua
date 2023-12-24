@@ -91,6 +91,13 @@ return require('packer').startup({
 
         use({'tpope/vim-surround'})
 
+        use {
+            'kevinhwang91/nvim-ufo',
+            requires = 'kevinhwang91/promise-async',
+            config = function()
+                require('MicoMan.plugins.ufo')
+            end,
+        }
         ---------------------------------
         -- Navigation and Fuzzy Search --
         ---------------------------------
