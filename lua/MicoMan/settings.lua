@@ -11,7 +11,7 @@ o.termguicolors = true
 -- o.hidden = true
 
 -- Decrease update time
-o.timeoutle = 500
+o.timeoutlen = 500
 o.updatetime = 200
 
 -- Number of screen lines to keep above and below the cursor
