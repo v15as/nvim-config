@@ -82,6 +82,8 @@ return require('packer').startup({
         --    config = function() require("nvim-autopairs").setup {} end
         --}
 
+        use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+
         use({
            'norcalli/nvim-colorizer.lua',
            event = 'CursorHold',
