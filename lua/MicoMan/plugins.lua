@@ -60,26 +60,27 @@ return require('packer').startup({
         -------------------------
         -- Editor UI Niceties --
         --------------------------
+
         -- Lua
-        use {
-            "folke/which-key.nvim",
-            config = function()
-                require('MicoMan.plugins.whichkey.whichkey')
-            end
-        }
+        -- use {
+        --     "folke/which-key.nvim",
+        --     config = function()
+        --         require('MicoMan.plugins.whichkey.whichkey')
+        --     end
+        -- }
 
-        use({
-            'lukas-reineke/indent-blankline.nvim',
-            main = "ibl",
-            config = function()
-                require('MicoMan.plugins.indentline')
-            end,
-        })
+        -- use({
+        --     'lukas-reineke/indent-blankline.nvim',
+        --     main = "ibl",
+        --     config = function()
+        --         require('MicoMan.plugins.indentline')
+        --     end,
+        -- })
 
-        use {
-            "windwp/nvim-autopairs",
-            config = function() require("nvim-autopairs").setup {} end
-        }
+        --use {
+        --    "windwp/nvim-autopairs",
+        --    config = function() require("nvim-autopairs").setup {} end
+        --}
 
         use({
            'norcalli/nvim-colorizer.lua',
