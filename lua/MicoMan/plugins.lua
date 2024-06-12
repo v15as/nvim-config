@@ -21,6 +21,13 @@ return require('packer').startup({
 
         use { "bluz71/vim-nightfly-colors", as = "nightfly" }
         use { "rebelot/kanagawa.nvim", as = "kanagawa" }
+        use {
+            "mcchrish/zenbones.nvim",
+            -- Optionally install Lush. Allows for more configuration or extending the colorscheme
+            -- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+            -- In Vim, compat mode is turned on as Lush only works in Neovim.
+            requires = "rktjmp/lush.nvim"
+        }
 
         use {
             'nvim-lualine/lualine.nvim',
@@ -81,7 +88,7 @@ return require('packer').startup({
         --    "windwp/nvim-autopairs",
         --    config = function() require("nvim-autopairs").setup {} end
         --}
-
+        -- install without yarn or npm
         use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
         use({
@@ -139,9 +146,20 @@ return require('packer').startup({
             end,
         })
 
+
+        -------------
+        -- Copilot --
+        -------------
+
+        use{"github/copilot.vim"}
+
         -----------------------------------
         -- LSP, Completions and Snippets --
         -----------------------------------
+
+        use{
+            "scalameta/nvim-metals",
+        }
 
         use {
             'VonHeikemen/lsp-zero.nvim',
