@@ -3,11 +3,11 @@ local function map(m, k, v)
 end
 
 -- Fix * (Keep the cursor position, don't move to next match)
-map('n', '*', '*N')
+map('n', '*', '*N',{})
 
 -- Fix n and N. Keeping cursor in center
-map('n', 'n', 'nzz')
-map('n', 'N', 'Nzz')
+map('n', 'n', 'nzz', {})
+map('n', 'N', 'Nzz', {})
 
 -- Mimic shell movements
 map('i', '<C-E>', '<C-o>$')
@@ -52,14 +52,16 @@ map('x', '<C-k>', ":move '<-2<CR>gv=gv")
 map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
 map('x', 'A', ':<C-U>normal! ggVG<CR>')
 
-map('n', '<leader>ex', '<CMD>Ex<Cr>')
-
+-- Fast navigation in the file
 map('n', '<Up>', '10k')
 map('n', '<Down>', '10j')
 
 map('v', '<Up>', '10k')
 map('v', '<Down>', '10j')
 
+-- Resize windows
 map('n','<Left>','<C-W><')
 map('n','<Right>','<C-W>>')
 
+-- Nvim Tree
+map('n','<C-n>','<CMD>NvimTreeToggle<Cr>')

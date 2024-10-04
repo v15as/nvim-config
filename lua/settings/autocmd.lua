@@ -1,3 +1,4 @@
+
 local A = vim.api
 
 -- Custom filetypes
@@ -56,4 +57,3 @@ A.nvim_create_autocmd('BufReadPost', {
     end,
 })
 
-vim.cmd.colorscheme("duckbones")
