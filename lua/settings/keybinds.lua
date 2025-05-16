@@ -65,3 +65,6 @@ map('n','<Right>','<C-W>>')
 
 -- Nvim Tree
 map('n','<C-n>','<CMD>NvimTreeToggle<Cr>')
+map('n','<A-q>','<CMD>tabNext<Cr>')
+map('t','<A-q>','<CMD>tabNext<Cr>')
+

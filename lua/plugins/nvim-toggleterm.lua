@@ -3,7 +3,7 @@ return {
         'akinsho/toggleterm.nvim',
         version = "*",
         opts = {
-            direction = 'horizontal',
+            direction = 'tab',
             close_on_exit = false,
             open_mapping = [[<A-t>]],
 
