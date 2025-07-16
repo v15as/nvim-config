@@ -102,10 +102,6 @@ require('nvim-treesitter.configs').setup({
             },
         },
     },
-    -- windwp/nvim-ts-autotag
-    autotag = {
-        enable = true,
-    },
     -- nvim-treesitter/playground
     playground = {
         enable = true,
@@ -123,3 +119,5 @@ require('nvim-treesitter.configs').setup({
         enable_autocmd = false,
     },
 })
+
+require('nvim-ts-autotag').setup()

@@ -3,6 +3,7 @@ local M = {
 		"nvim-treesitter/nvim-treesitter",
                 event = 'CursorHold',
                 run = ':TSUpdate',
+                build = ':TSUpdate',
 		config = function()
 			require('plugins.treesitter.treesitter')
 		end,
