@@ -49,8 +49,8 @@ map('x', '<C-k>', ":move '<-2<CR>gv=gv")
 
 -- Use operator pending mode to visually select the whole buffer
 -- e.g. dA = delete buffer ALL, yA = copy whole buffer ALL
-map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
-map('x', 'A', ':<C-U>normal! ggVG<CR>')
+-- map('o', 'A', ':<C-U>normal! mzggVG<CR>`z')
+-- map('x', 'A', ':<C-U>normal! ggVG<CR>')
 
 -- Fast navigation in the file
 map('n', '<Up>', '10k')
